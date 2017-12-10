@@ -78,7 +78,7 @@ namespace Rynchodon.PluginLoader
 				{
 					if (_instance != null)
 						return;
-					MySandboxGame.Static.Invoke(() => typeof(MyPlugins).GetMethod("LoadPlugins", BindingFlags.Static | BindingFlags.NonPublic).Invoke(null, new object[] { Assembly.GetExecutingAssembly() }));
+					MySandboxGame.Static.Invoke(() => typeof(MyPlugins).GetMethod("LoadPlugins", BindingFlags.Static | BindingFlags.NonPublic).Invoke(null, new object[] { Assembly.GetExecutingAssembly() }), "SEPL");
 					return;
 				}
 				Thread.Sleep(1);
