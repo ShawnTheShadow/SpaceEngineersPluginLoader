@@ -1,5 +1,5 @@
 {
-  "author": "Rynchodon",
+  "author": "ShawnTheShadow",
   "files": [
     {
       "requires": null,
@@ -22,21 +22,21 @@
       "targetFolder": null
     }
   ],
-  "publish": false,
+  "publish": true,
   "release": {
     "body": null,
     "draft": true,
     "name": null,
-    "prerelease": false,
+    "prerelease": true,
     "target_commitish": null
   },
   "repository": "SpaceEngineersPluginLoader",
   "requires": null,
   "version": {
-    "Build": 0,
-    "Major": 0,
-    "Minor": 0,
-    "Revision": 0,
+    "Build": 1,
+    "Major": 1,
+    "Minor": 6,
+    "Revision": 3,
     "SeVersion": -1
   },
   "zipFileName": "SEPL_AutoUpdateAssets.zip"
