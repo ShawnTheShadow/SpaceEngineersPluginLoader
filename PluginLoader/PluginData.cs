@@ -122,7 +122,7 @@ namespace Rynchodon.PluginLoader
 			else
 			{
 				Logger.WriteLine("Create new config");
-				PluginConfig config = new PluginConfig(new PluginName("Rynchodon", Loader.SeplRepo), false);
+				PluginConfig config = new PluginConfig(new PluginName("ShawnTheShadow", Loader.SeplRepo), false);
 				_gitHubConfig.Add(config.name, config);
 			}
 
