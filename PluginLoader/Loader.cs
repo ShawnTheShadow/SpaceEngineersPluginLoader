@@ -115,7 +115,7 @@ namespace Rynchodon.PluginLoader
 			if (builder.version.SeVersion < 0)
 				builder.version.SeVersion = 0;
 			else if (builder.version.SeVersion == 0)
-				builder.version.SeVersion = GetCurrentSEVersion();
+				builder.version.SeVersion = GetCurrentSeVersion();
 
 			_instance._task.Wait();
 			Plugin plugin = _instance.AddLocallyCompiled(builder);
@@ -142,7 +142,7 @@ namespace Rynchodon.PluginLoader
 		/// Get the current Space Engineers version from SpaceEngineersGame.
 		/// </summary>
 		/// <returns>The current version of Space Engineers.</returns>
-		public static int GetCurrentSEVersion()
+		public static int GetCurrentSeVersion()
 		{
 			FieldInfo field = typeof(SpaceEngineersGame).GetField("SE_VERSION", BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic);
 			if (field == null)
@@ -161,8 +161,13 @@ namespace Rynchodon.PluginLoader
 		{
 			get
 			{
-				_task.Wait();
-				return _data.GitHubConfig;
+			    if (_task.IsComplete) return _data.GitHubConfig;
+			    else
+			    {
+			        _task.Wait();
+			        return _data.GitHubConfig;
+                }
+				
 			}
 			set
 			{

@@ -287,7 +287,7 @@ namespace Rynchodon.PluginLoader
 				// already complained about it in depth
 				return false;
 
-			int seVersion = Loader.GetCurrentSEVersion();
+			int seVersion = Loader.GetCurrentSeVersion();
 
 			Release mostRecent = null;
 			foreach (Release rel in releases)

@@ -1,15 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginManager", "PluginManager\PluginManager.csproj", "{3EB56480-C773-4243-ABB8-AD9E5F95CCE5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginLoader", "PluginLoader\PluginLoader.csproj", "{4F2B06BF-1266-422A-ABD2-0F25341D21C4}"
 EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "SetupProject", "SetupProject\SetupProject.wixproj", "{0E4EC39D-2015-47B5-A277-D2E257A1B37E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TorchPlugin", "TorchPlugin\TorchPlugin.csproj", "{C78948F8-7557-47F6-9459-4D00B3C2BEF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,14 +37,11 @@ Global
 		{0E4EC39D-2015-47B5-A277-D2E257A1B37E}.Release|x64.Build.0 = Release|x64
 		{0E4EC39D-2015-47B5-A277-D2E257A1B37E}.Release|x86.ActiveCfg = Release|x86
 		{0E4EC39D-2015-47B5-A277-D2E257A1B37E}.Release|x86.Build.0 = Release|x86
-		{C78948F8-7557-47F6-9459-4D00B3C2BEF2}.Debug|x64.ActiveCfg = Debug|x64
-		{C78948F8-7557-47F6-9459-4D00B3C2BEF2}.Debug|x64.Build.0 = Debug|x64
-		{C78948F8-7557-47F6-9459-4D00B3C2BEF2}.Debug|x86.ActiveCfg = Debug|x64
-		{C78948F8-7557-47F6-9459-4D00B3C2BEF2}.Release|x64.ActiveCfg = Release|x64
-		{C78948F8-7557-47F6-9459-4D00B3C2BEF2}.Release|x64.Build.0 = Release|x64
-		{C78948F8-7557-47F6-9459-4D00B3C2BEF2}.Release|x86.ActiveCfg = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6EC5BCD-415D-41EF-9FAB-EA5A21D43880}
 	EndGlobalSection
 EndGlobal
